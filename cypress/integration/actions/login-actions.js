@@ -1,1 +1,0 @@
-// This file contain all Login page actions
