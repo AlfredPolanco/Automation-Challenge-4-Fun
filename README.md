@@ -4,6 +4,16 @@ This is an Automation Challenge 4 fun using Cypress
 ## Writer: Alfredo Polanco
 Software QA Engineer
 
+# In the following repo we will be taking the challenge to automate the following test cases
+- Visit this page http://automationpractice.com/index.php
+- Create an account
+- Log out after creating the account
+- Log in
+- Hover on dresses
+- Select summer dresses
+- Sort by lowest first
+- Add to cart the 2nd dress
+
 ## Requeriments:
 
 1. Visual Studio Code 
