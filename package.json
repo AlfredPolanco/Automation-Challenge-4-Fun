@@ -1,0 +1,28 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Automation Challenge 4 Fun using Cypress by Alfredo Polanco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredPolanco/Automation-Challenge-4-Fun.git"
+  },
+  "keywords": [
+    "QA",
+    "Automation",
+    "Testing",
+    "Cypress"
+  ],
+  "author": "Alfredo Polanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfredPolanco/Automation-Challenge-4-Fun/issues"
+  },
+  "homepage": "https://github.com/AlfredPolanco/Automation-Challenge-4-Fun#readme",
+  "devDependencies": {
+    "cypress": "^9.5.1"
+  }
+}
