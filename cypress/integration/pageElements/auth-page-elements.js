@@ -22,7 +22,7 @@ const gender = {
 };
 
 const customerFirstName = {
-    selector: 'customer_firstname'
+    selector: '#customer_firstname'
 };
 
 const customerLastName = {
@@ -43,14 +43,6 @@ const customerMonthOfBirth = {
 
 const customerYearOfBirth = {
     selector: '#years'
-};
-
-const addressFirstName = {
-    selector: '#firstname'
-};
-
-const addressLastName = {
-    selector: '#lastname'
 };
 
 const addressCompany = {
@@ -77,7 +69,7 @@ const country = {
     selector: '#id_country'
 };
 
-const other = {
+const additionalInfo = {
     selector: '#other'
 };
 
@@ -97,18 +89,17 @@ const personalInformationForm = {
     customerDayOfBirth,
     customerMonthOfBirth,
     customerYearOfBirth,
-    addressFirstName,
-    addressLastName,
     addressCompany,
     address1,
     city,
     state,
     postalCode,
     country,
-    other,
+    additionalInfo,
     phoneNumber,
     addressAlias,
-    submitCreateButton
+    submitCreateButton,
+    submitAccountButton
 }
 
 export const authPageElements = {
