@@ -6,9 +6,9 @@ const signInButton = {
 
 const logo = {
     selector: '.logo'
-}
+};
 
 export const homePageElements = {
     signInButton,
     logo
-}
+};

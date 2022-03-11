@@ -4,7 +4,7 @@ import { authPageElements } from "../pageElements/auth-page-elements";
 // Validates that user is currently at Authentication page
 function validateAuthHeader() {
     cy.get(authPageElements.authHeader.selector)
-    .should('have.text', authPageElements.authHeader.text);
+        .should('have.text', authPageElements.authHeader.text);
 }
 
 // Clicks Create an account button
@@ -23,7 +23,6 @@ export function typeEmailAddress(email) {
         .type(email)
     clickSubmitCreateButton();
 }
-
 
 // Types the email address and password to log in
 export function fillLoginForm(email, password) {
@@ -64,28 +63,28 @@ export function fillPersonalInformationForm(
     cy.get(authPageElements.personalInformationForm.customerFirstName.selector)
         .type(firstName);
     cy.get(authPageElements.personalInformationForm.customerLastName.selector)
-    .type(lastName);
+        .type(lastName);
     cy.get(authPageElements.personalInformationForm.customerPassword.selector)
-    .type(password);
+        .type(password);
     cy.get(authPageElements.personalInformationForm.customerDayOfBirth.selector)
-    .select(dayOfBirth);
+        .select(dayOfBirth);
     cy.get(authPageElements.personalInformationForm.customerMonthOfBirth.selector)
-    .select(monthOfBirth);
+        .select(monthOfBirth);
     cy.get(authPageElements.personalInformationForm.customerYearOfBirth.selector)
-    .select(yearOfBirth);
+        .select(yearOfBirth);
     cy.get(authPageElements.personalInformationForm.addressCompany.selector)
-    .type(company);
+        .type(company);
     cy.get(authPageElements.personalInformationForm.address1.selector)
-    .type(address);
+        .type(address);
     cy.get(authPageElements.personalInformationForm.city.selector)
-    .type(city);
+        .type(city);
     cy.get(authPageElements.personalInformationForm.state.selector)
-    .select(state);
+        .select(state);
     cy.get(authPageElements.personalInformationForm.postalCode.selector)
-    .type(postalCode);
+        .type(postalCode);
     cy.get(authPageElements.personalInformationForm.additionalInfo.selector)
-    .type(additionalInfo);
+        .type(additionalInfo);
     cy.get(authPageElements.personalInformationForm.phoneNumber.selector)
-    .type(phoneNumber);
+        .type(phoneNumber);
     cy.get(authPageElements.personalInformationForm.submitAccountButton.selector).click();
 }

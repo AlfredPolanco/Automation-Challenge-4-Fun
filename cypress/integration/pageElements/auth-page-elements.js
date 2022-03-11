@@ -112,7 +112,7 @@ const personalInformationForm = {
     addressAlias,
     submitCreateButton,
     submitAccountButton
-}
+};
 
 const loginForm = {
     emailLogin,

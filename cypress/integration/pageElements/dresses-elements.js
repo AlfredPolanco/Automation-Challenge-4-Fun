@@ -13,8 +13,23 @@ const categoryName = {
     text: 'Summer Dresses'
 };
 
+const sortByFilter = {
+    selector: '#selectProductSort'
+};
+
+const addToCart = {
+    selector: '.ajax_add_to_cart_button > span'
+};
+
+const shoppingCartLayer = {
+    selector: '#layer_cart > .clearfix'
+};
+
 export const dressesElements = {
     dresses,
     summerDresses,
-    categoryName
+    categoryName,
+    sortByFilter,
+    addToCart,
+    shoppingCartLayer
 };
