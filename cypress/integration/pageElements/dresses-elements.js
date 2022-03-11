@@ -5,10 +5,16 @@ const dresses = {
 };
 
 const summerDresses = {
-    text: 'Summer'
+    selector: '.submenu-container > :nth-child(3) > a'
+};
+
+const categoryName = {
+    selector: '.cat-name',
+    text: 'Summer Dresses'
 };
 
 export const dressesElements = {
     dresses,
-    summerDresses
+    summerDresses,
+    categoryName
 };
