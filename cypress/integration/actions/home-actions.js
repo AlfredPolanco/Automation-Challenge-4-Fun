@@ -5,3 +5,7 @@ export function clickOnSignInButton() {
     cy.get(homePageElements.signInButton.selector)
         .click();
 }
+
+export function clickOnLogo() {
+    cy.get(homePageElements.logo.selector).click();
+}

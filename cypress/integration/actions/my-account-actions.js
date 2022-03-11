@@ -6,3 +6,8 @@ export function validateMyAccountPage() {
     cy.get(myAccountElements.myAccountHeader.selector)
         .should('have.text', myAccountElements.myAccountHeader.text);
 }
+
+// Clicks the Sign Out button
+export function clickOnSignOutButton() {
+    cy.get(myAccountElements.logOutButton.selector).click();
+}

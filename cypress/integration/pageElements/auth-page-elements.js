@@ -5,6 +5,18 @@ const authHeader = {
     text: 'Authentication'
 };
 
+const emailLogin = {
+    selector: '#email'
+};
+
+const passwordLogin = {
+    selector: '#passwd'
+};
+
+const submitLogin = {
+    selector: '#SubmitLogin > span'
+};
+
 const emailInput = {
     selector: '#email_create'
 };
@@ -102,9 +114,16 @@ const personalInformationForm = {
     submitAccountButton
 }
 
+const loginForm = {
+    emailLogin,
+    passwordLogin,
+    submitLogin
+};
+
 export const authPageElements = {
     authHeader,
     emailInput,
     submitCreateButton,
-    personalInformationForm
+    personalInformationForm,
+    loginForm
 };

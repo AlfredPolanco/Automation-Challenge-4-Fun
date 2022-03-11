@@ -1,6 +1,7 @@
 import { clickOnSignInButton } from '../actions/home-actions';
 import { validateMyAccountPage } from '../actions/my-account-actions';
 import { fillLoginForm } from '../actions/auth-actions';
+import { hoverOverDresses } from '../actions/dresses-actions';
 
 context('Automation Challenge 4 Fun', () => {
     beforeEach(() => {
@@ -9,11 +10,12 @@ context('Automation Challenge 4 Fun', () => {
       });
       cy.visit('/');
       cy.wait(1000);
-    });
-
-    it('Login test', () => {
       clickOnSignInButton();
       fillLoginForm(Cypress.env('email'),Cypress.env('password'));
       validateMyAccountPage();
+    });
+
+    it('Hover over a dress', () => {
+        hoverOverDresses();
     });
 });

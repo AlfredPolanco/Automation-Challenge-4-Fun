@@ -24,6 +24,22 @@ export function typeEmailAddress(email) {
     clickSubmitCreateButton();
 }
 
+
+// Types the email address and password to log in
+export function fillLoginForm(email, password) {
+    cy.waitUntil(() => cy.get(authPageElements.authHeader.selector)
+    .should('be.visible'),{
+      timeout: 1500,
+      interval: 100,
+    });
+    cy.get(authPageElements.loginForm.emailLogin.selector)
+        .type(email);
+    cy.get(authPageElements.loginForm.passwordLogin.selector)
+        .type(password);
+    cy.get(authPageElements.loginForm.submitLogin.selector)
+        .type(password);
+};
+
 // Fills the personal information form
 export function fillPersonalInformationForm(
     firstName,

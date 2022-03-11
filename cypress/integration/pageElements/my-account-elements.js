@@ -5,6 +5,11 @@ const myAccountHeader = {
     text: 'My account'
 };
 
+const logOutButton = {
+    selector: '.logout'
+};
+
 export const myAccountElements = {
-    myAccountHeader
+    myAccountHeader,
+    logOutButton
 };
