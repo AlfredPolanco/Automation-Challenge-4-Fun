@@ -11,7 +11,7 @@ context('Automation Challenge 4 Fun', () => {
       cy.wait(1000);
     });
 
-    it('Login test', () => {
+    it('Log in', () => {
       clickOnSignInButton();
       fillLoginForm(Cypress.env('email'),Cypress.env('password'));
       validateMyAccountPage();
