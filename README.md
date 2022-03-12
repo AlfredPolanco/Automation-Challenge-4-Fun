@@ -38,7 +38,3 @@ npm install
 ```bash
 npx cypress open
 ```
-   Or running it without the GUI
-```bash
-npm run tests
-```
