@@ -8,7 +8,12 @@ const logo = {
     selector: '.logo'
 };
 
+const homeButton = {
+    selector: '.home'
+};
+
 export const homePageElements = {
     signInButton,
-    logo
+    logo,
+    homeButton
 };

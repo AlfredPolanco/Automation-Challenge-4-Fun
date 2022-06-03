@@ -8,3 +8,8 @@ export function clickOnSignInButton() {
 export function clickOnLogo() {
     cy.get(homePageElements.logo.selector).click();
 }
+
+//Clicks the home button
+export function clickOnHomeButton() {
+    cy.get(homePageElements.homeButton.selector).click();
+}

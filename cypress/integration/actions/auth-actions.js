@@ -8,7 +8,7 @@ function validateAuthHeader() {
 }
 
 // Clicks Create an account button
-function clickSubmitCreateButton() {
+function clickOnSubmitCreateButton() {
     cy.get(authPageElements.submitCreateButton.selector).click();
 }
 
@@ -21,7 +21,7 @@ export function typeEmailAddress(email) {
     });
     cy.get(authPageElements.emailInput.selector)
         .type(email)
-    clickSubmitCreateButton();
+    clickOnSubmitCreateButton();
 }
 
 // Types the email address and password to log in

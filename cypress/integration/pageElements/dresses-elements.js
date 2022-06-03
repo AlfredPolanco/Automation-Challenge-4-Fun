@@ -22,7 +22,24 @@ const addToCart = {
 };
 
 const shoppingCartLayer = {
-    selector: '#layer_cart > .clearfix'
+    selector: '#layer_cart > .clearfix',
+    selectorConfirmation: '.layer_cart_product > h2'
+};
+
+const cartConformationModal = {
+    selector: '.cross'
+};
+
+const continueShopping = {
+    selector: '.continue > span'
+};
+
+const proceedToCheckout = {
+    selector: '.button-container > .button-medium > span'
+};
+
+const cartButton = {
+    selector: '[title="View my shopping cart"]'
 };
 
 export const dressesElements = {
@@ -31,5 +48,9 @@ export const dressesElements = {
     categoryName,
     sortByFilter,
     addToCart,
-    shoppingCartLayer
+    shoppingCartLayer,
+    cartConformationModal,
+    continueShopping,
+    proceedToCheckout,
+    cartButton
 };

@@ -6,7 +6,9 @@ import {
     selectSummerDresses,
     validateSummerDressesCategory,
     selectSortByFilter,
-    clickOnAddToCart
+    clickOnAddToCart,
+    clickProceedToCheckoutButton,
+    closeCartConfirmationModal
 } from '../actions/dresses-actions';
 
 context('Automation Challenge 4 Fun', () => {
@@ -21,11 +23,14 @@ context('Automation Challenge 4 Fun', () => {
       validateMyAccountPage();
     });
 
-    it('Add to cart the second dress', () => {
+    it('Adds to cart the second dress and third dress', () => {
         hoverOverDresses();
         selectSummerDresses();
         validateSummerDressesCategory();
         selectSortByFilter('Price: Lowest first');
-        clickOnAddToCart();
+        clickOnAddToCart(1);
+        closeCartConfirmationModal();
+        clickOnAddToCart(2);
+        clickProceedToCheckoutButton();
     });
 });
