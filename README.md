@@ -12,7 +12,8 @@ Software QA Engineer
 - Hover on dresses
 - Select summer dresses
 - Sort by lowest first
-- Add to cart the 2nd dress
+- Add to cart the 2nd and 3rd dress
+- Proceed to checkout 
 
 ## Requeriments:
 
