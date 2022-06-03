@@ -38,13 +38,16 @@ describe('E2E-1: Automation Challenge', () => {
         Cypress.Cookies.preserveOnce('session_id', 'remember_token');
     })
 
+    after(() => {
+        clickOnSignOutButton();
+    });
+
     afterEach(() => {
         cy.saveLocalStorage();
-      });
+    });
 
     it('Visit page', () => {
         clickOnHomeButton();
-        cy.visit('/');
         cy.url().should('eq', 'http://automationpractice.com/index.php')
     });
 
