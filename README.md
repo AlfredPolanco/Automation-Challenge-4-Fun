@@ -39,3 +39,8 @@ npm install
 ```bash
 npx cypress open
 ```
+
+4. Run all tests via command line and generate report
+```bash
+npm run test
+```
