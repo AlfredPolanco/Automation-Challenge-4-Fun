@@ -8,6 +8,7 @@ lerna-debug.log*
 
 # Tests
 /cypress/screenshots
+/cypress/videos
 /cypress/reports
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
