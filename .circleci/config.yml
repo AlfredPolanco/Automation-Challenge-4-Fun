@@ -20,6 +20,6 @@ jobs:
           when: always
 
       - run:
-          name: Run cypress tests process
-          command: npm run tests
+          name: Run cypress tests with report
+          command: npm run test
 
