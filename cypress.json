@@ -1,3 +1,19 @@
 {
-    "baseUrl": "http://automationpractice.com/index.php"
+    "baseUrl": "http://automationpractice.com/index.php",
+
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/Automation4FunChallenge",
+        "reportTitle": "Automation 4 Fun",
+        "reportPageTitle": "Test Automation Results",
+        "reportFilename": "AutomationReport",
+        "quite": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      }
+    }
 }
