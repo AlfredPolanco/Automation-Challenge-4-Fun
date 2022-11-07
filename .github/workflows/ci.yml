@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Cypress run
-        uses: cypress-io/github-action@v4.1.0 # use the explicit version number
-        with:
-          build: npm run build
-          start: npm run test
+        uses: cypress-io/github-action@v4.2.0 # use the explicit version number
+        
+      - name: Running tests
+      - run: npm run test
